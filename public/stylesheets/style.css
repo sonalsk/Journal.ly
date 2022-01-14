@@ -1,0 +1,184 @@
+@import url('https://fonts.googleapis.com/css2?family=Gotu&family=Raleway&family=The+Nautigal:wght@400;700&display=swap');
+
+body {
+    background-color: #F7DAD9;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    height: 100vh;
+    width: 100vw;
+    margin: 0;
+
+    overflow-x: hidden;
+}
+
+
+.journal {
+    background-color: #fff5daa9;
+    
+    height: 90vh;
+    width: 60vw;
+    border-radius: 2vw;
+
+    margin-top: 5vh;
+    position: absolute;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+    height: 18vh;
+}
+
+.header h1 {
+    text-align: center;
+    font-family: 'The Nautigal', cursive;
+    font-size: 6vw;    
+    font-weight: 800;
+    color: #5E454B;    
+}
+
+.header img {
+    width: 8vw;
+}
+
+hr {
+    height: 0.5vh;
+    border: solid;
+    color: pink;
+}
+
+.entry {
+    margin: 0;
+    padding: 0 5vw;
+}
+
+.entry h3 {
+    font-family: 'Gotu', sans-serif;
+    font-weight: 800;
+    font-size: 1.5vw;
+    color: #5D534A;
+    margin: 0;
+}
+
+.entry p {
+    font-family: 'Raleway', sans-serif;
+    font-size: 1.2vw;
+    margin: 0;
+}
+
+.box {
+    height: 70%;
+    width: 60vw;
+
+    position: relative;
+}
+
+.about {
+    height: 30%;
+}
+
+.misc {
+    height: 70%;
+}
+
+.image {
+    display: flex;
+    justify-content: end;
+    object-fit: cover;
+    height: 100%;
+}
+
+.ii {
+    margin-left: 2vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden
+}
+
+.ii img {
+    flex-shrink: 0;
+    min-width: 100%;
+    min-height: 100%
+}
+
+.col-md-8 {
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+}
+
+.entry-left {
+    padding: 0 2vw;
+    margin-bottom: 2vh;
+}
+
+
+#form {
+    display: inline;
+}
+
+.button {
+    border: none;
+    background-color: #dea49b;
+    color: white;
+    margin-top: 2vh;
+}
+
+
+.jnls {
+    margin: 0 3vw;
+    margin-top: 8vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.jnl {
+    background-color: #fff5daa9;
+    padding: 2vh 2vw;
+    border-radius: 1vw;
+    margin-bottom: 5vh;
+    margin-right: 1vw;
+}
+
+.jnl h3 {
+    padding: 2vh 0;
+    font-family: 'Gotu', sans-serif;
+    font-weight: 800;
+    color: #5D534A;
+    margin: 0;
+    
+}
+
+.jnl p {
+    font-family: 'Raleway', sans-serif;
+    margin: 0;
+    font-size: 1vw;
+    padding: 1vh 0;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    margin-top: 5vh;
+}
+
+form h3 {    
+    font-family: 'Gotu', sans-serif;
+    font-weight: 800;
+    color: #5D534A;
+    margin: 0;
+}
+
+textarea {
+    margin-bottom: 2vh;
+}
+

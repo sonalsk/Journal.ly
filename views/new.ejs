@@ -1,0 +1,35 @@
+<%- include('partials/header') -%>
+
+<div class="header">
+    <h1>Create new Journal</h1>
+</div>
+
+<div class="form">
+
+    <form action="/journal" method="POST">
+        <label for="remember"> <h3>A LITTLE ABOUT TODAY</h3> </label>
+        <textarea id="summary" name="journal[summary]"></textarea>
+
+        <label for="remember"> <h3>ONE THING I WANT TO REMEMBER ABOUT TODAY</h3> </label>
+        <textarea id="remember" name="journal[remember]"></textarea>
+
+        <label for="grateful"> <h3>TODAY I'M GRATEFUL FOR</h3> </label>
+        <textarea id="grateful" name="journal[grateful]"></textarea>
+
+        <label for="image"> <h3>IMAGE</h3> </label>
+        <textarea id="image" name="journal[image]"></textarea>
+
+        <label for="mood"> <h3>MOOD</h3> </label>
+        <select name="journal[mood]" id="mood">
+            <option value="Happy">Happy</option>
+            <option value="Sad">Sad</option>
+            <option value="Angry">Angry</option>
+            <option value="Sick">Sick</option>
+            <option value="Okayish">Okayish</option>
+        </select>
+
+        <input class="button btn" type="submit">
+    </form>
+</div>
+
+<%- include('partials/footer') -%>

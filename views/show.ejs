@@ -1,0 +1,55 @@
+<%- include('partials/header') -%>
+
+<div class="journal">
+    <div class="header">
+        <h1><%= journal.createdOn.toDateString() %></h1>
+        <img class="image" src="/assets/plant.png" alt="">
+    </div>
+
+    <hr>
+
+    <div class="row box">
+        <div class="row about">
+            <div class="entry">
+                <h3> A LITTLE ABOUT TODAY </h3>
+                <p><%= journal.summary %></p>
+            </div>
+        </div>
+
+        <div class="row misc">
+            <div class="d-none d-md-flex col-4 image">
+                <div class="ii">
+                    <img src="<%= journal.image %>" alt="">
+                </div>
+            </div>
+            <div class="col-12 col-md-8 misc">
+                <div class="entry entry-left">
+                    <h3> THINGS I WANT TO REMEMBER ABOUT TODAY </h3>
+                    <p><%= journal.remember %></p>
+                </div>
+
+                <div class="entry entry-left">
+                    <h3> TODAY I'M GRATEFUL FOR </h3>
+                    <p><%= journal.grateful %></p>
+                </div>
+
+                <div class="entry entry-left">
+                    <h3> MOOD </h3>
+                    <p><%= journal.mood %></p>  
+                </div>
+
+                <div class="entry-left buttons">
+                    <a class="button btn" href="/journal/<%= journal._id %>/edit">EDIT</a>
+
+                    <form id="form" action="/journal/<%= journal._id %>?_method=DELETE" method="POST">
+                        <button class="button btn">DELETE</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+
+<%- include('partials/footer') -%>

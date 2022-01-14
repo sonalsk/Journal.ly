@@ -1,0 +1,23 @@
+<%- include('partials/header') -%>
+
+<div class="header">
+    <h1>My Journals</h1>
+</div>
+
+<div class="buttons">
+    <a class="button btn" href="/journal/new"> New Post </a>
+</div>
+
+<div class="row jnls">
+    <% journals.forEach(journal => { %>
+        <div class="col-12 col-md-3 jnl">
+            <h3><%= journal.createdOn.toDateString() %></h3>
+            <p><%= journal.summary %></p>
+            <p>Mood: <%= journal.mood %></p>
+            
+            <a class="button btn" href="/journal/<%= journal._id %>"><strong>Read More</strong></a>
+        </div>
+    <% }); %>
+</div>
+
+<%- include('partials/footer') -%>
